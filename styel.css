@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+div::-webkit-scrollbar {
+    height: .5rem;
+}
+div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.nav-item{
+    width: 100%;
+    height: 9vh;
+    background-color: #3e6787;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo{
+    font-size: 5rem;
+    color: rgb(226, 245, 236);
+    cursor: pointer;
+}
+.logo:hover{
+    color:white;
+}
+.logo u{
+    font-size: 5.5rem;
+    color: #b3f902;
+}
+.search i{
+    font-size: 2.2rem;
+    color: #f4f4bd;
+    margin: 1rem;
+}
+.search i:hover{
+    color: white;
+}
+.search input{
+    border-radius: .5rem;
+    border: none;
+    width: 55rem;
+    height: 3.6rem;
+    padding: .5rem;
+    color: #3e6787;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.btn{
+    padding: .7rem 1.6rem;
+    border-radius: .8rem;
+    border: none;
+    font-weight: 900;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:white;
+    box-shadow: 0 .5rem 1.3rem rgb(171, 171, 171);
+}
+.nav-all{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+    background-color: black;
+    padding: 2rem;
+    position: fixed;
+    top: 9vh;
+    left: 0;
+}
+.nav-all i{
+color: #d7d2d2;
+font-size: 2.7rem;
+margin-right: 1rem;
+}
+.nav-all div a{
+    text-decoration: none;
+    margin-left: 1.5rem;
+    color: #d7d2d2;
+    font-size: 1.7rem;
+}
+.nav-all a:hover{
+    color: white;
+}
+.nav-all i:hover{
+    color: white;
+}
+.hide{
+    position: fixed;
+    width: 22%;
+    height: 0vh;
+    background-color: rgba(255, 255, 255, .9);
+    transition: all .9s ease-in-out;
+}
+.active{
+    position: fixed;
+    width: 22%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .9);
+    top: 9vh;
+    left: 0;
+}
+.shoping-first{
+    height: 45rem;
+    width: 100%;
+    margin-top: 15vh;
+    background-image: url('img/shoping1.jfif');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0rem .5rem 3rem black;
+}
+.shoping-first > div{
+    width: 20%;
+    height: 37rem;
+    background-color: rgba(215, 210, 210, .7);
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: all .7s ease;
+    overflow: hidden;
+}
+.shoping-first > div span{
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+.shoping-first > div img{
+    width: 27rem;
+    height: 25rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+}
+.shoping-first > div button{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.shoping-first > div button:hover{
+    background-color: white;
+}
+.shoping-first .div-clothes{
+    margin-bottom: -32rem;   
+}
+.shoping-first > div:hover{
+    transform: scale(1.05);
+}
+.shoping-first .div-electronics{
+    margin-bottom: -38rem;
+}
+.shoping-first .div-computer{
+    margin-bottom: -32rem; 
+}
+.shoping-first .div-health{
+    margin-bottom: -38rem;
+}
+.clothes{
+    width: 100%;
+    height: 40rem;
+    margin-top: 15rem;
+    padding: 1rem 0 0 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clothes span{
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: rgb(69, 65, 65);
+    cursor: pointer;
+    text-shadow: .7rem 0rem .5rem black;
+}
+.clothes span:hover{
+    color: white;
+}
+.clothes span u{
+    font-size: 7.5rem;
+}
+.clothes .clothes-scroll{
+    width: 95%;
+    height: 33rem;
+    background-color: white;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    overflow-x:scroll ;
+}
+.clothes .clothes-scroll img{
+    width: 30rem;
+    height: 100%;
+    margin-right: 4rem;
+    border-radius: .5rem;
+    border: .1rem solid black;
+    padding: .4rem;
+}
+.clothes .clothes-scroll img:hover{
+    transform: scale(.99);
+}
+.about-us{
+    margin-top: 10rem;
+    background-color: #384d5d;
+    width: 100%;
+    height: 32rem;
+    text-align: center;
+    padding: 3rem;
+    overflow: hidden;
+}
+.about-us span{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.about-us p{
+    column-count: 4;
+    column-rule:.2rem solid #000000;
+    column-gap: 4rem;
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    color: rgb(22, 21, 21);
+}
+footer{
+    background-color: rgb(18, 18, 18);
+    text-align: center;
+}
+@media (max-width:200px){
+    html{
+        font-size: 1.5px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 3vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 3vh;
+    }
+    .shoping-first{
+        margin-top: 6vh;
+    }
+    .active{
+        width: 100%;
+        height: 22vh;
+        top: 6vh;
+    }
+}
+@media (min-width:200px) and (max-width:300px){
+
+    html{
+        font-size: 2px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 3vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 3vh;
+    }
+    .shoping-first{
+        margin-top: 6vh;
+    }
+    .active{
+        width: 100%;
+        height: 23vh;
+        top: 6vh;
+    }
+}
+@media (min-width:300px) and (max-width:350px){
+
+    html{
+        font-size: 2.5px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 3vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 3vh;
+    }
+    .shoping-first{
+        margin-top: 6vh;
+    }
+    .active{
+        width: 100%;
+        height: 30vh;
+        top: 6vh;
+    }
+}
+@media (min-width:350px) and (max-width:400px){
+
+    html{
+        font-size: 2.8px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 3vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 3vh;
+    }
+    .shoping-first{
+        margin-top: 6vh;
+    }
+    .active{
+        width: 100%;
+        height: 38vh;
+        top: 6vh;
+    }
+}
+
+@media (min-width:400px) and (max-width:450px){
+
+    html{
+        font-size: 2.8px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 3vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 3vh;
+    }
+    .shoping-first{
+        margin-top: 6vh;
+    }
+    .active{
+        width: 100%;
+        height: 40vh;
+        top: 6vh;
+    }
+}
+@media (min-width:450px) and (max-width:500px){
+
+    html{
+        font-size: 3.2px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 3vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 3vh;
+    }
+    .shoping-first{
+        margin-top: 6vh;
+    }
+    .active{
+        width: 100%;
+        height: 43vh;
+        top: 6vh;
+    }
+}
+@media (min-width:500px) and (max-width:550px){
+
+    html{
+        font-size: 3.5px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 4vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 4vh;
+    }
+    .shoping-first{
+        margin-top: 7vh;
+    }
+    .active{
+        width: 100%;
+        height: 45vh;
+        top: 7vh;
+    }
+}
+@media (min-width:550px) and (max-width:600px){
+
+    html{
+        font-size: 3.8px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 4vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 4vh;
+    }
+    .shoping-first{
+        margin-top: 7vh;
+    }
+    .active{
+        width: 100%;
+        height: 47vh;
+        top: 7vh;
+    }
+}
+
+@media (min-width:600px) and (max-width:650px){
+
+    html{
+        font-size: 4.1px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 4vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 4vh;
+    }
+    .shoping-first{
+        margin-top: 7vh;
+    }
+    .active{
+        width: 100%;
+        height: 50vh;
+        top: 7vh;
+    }
+}
+@media (min-width:650px) and (max-width:700px){
+
+    html{
+        font-size: 4.5px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 4vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 4vh;
+    }
+    .shoping-first{
+        margin-top: 7vh;
+    }
+    .active{
+        width: 100%;
+        height: 53vh;
+        top: 7vh;
+    }
+}
+@media (min-width:700px) and (max-width:750px){
+
+    html{
+        font-size: 4.8px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 5vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 5vh;
+    }
+    .shoping-first{
+        margin-top: 8vh;
+    }
+    .active{
+        width: 100%;
+        height: 57vh;
+        top: 8vh;
+    }
+}
+@media (min-width:750px) and (max-width:800px){
+
+    html{
+        font-size: 5.3px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 6vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 6vh;
+    }
+    .shoping-first{
+        margin-top: 9vh;
+    }
+    .active{
+        width: 100%;
+        height: 65vh;
+        top: 9vh;
+    }
+}
+
+@media (min-width:800px) and (max-width:900px){
+
+    html{
+        font-size: 5.8px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 6vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 6vh;
+    }
+    .shoping-first{
+        margin-top: 9vh;
+    }
+    .active{
+        width: 100%;
+        height: 68vh;
+        top: 9vh;
+    }
+}
+@media (min-width:900px) and (max-width:1000px){
+
+    html{
+        font-size: 6.4px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 6vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 6vh;
+    }
+    .shoping-first{
+        margin-top: 9vh;
+    }
+    .active{
+        width: 100%;
+        height: 70vh;
+        top: 9vh;
+    }
+}
+@media (min-width:1000px) and (max-width:1100px){
+
+    html{
+        font-size: 7px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 8vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 8vh;
+    }
+    .shoping-first{
+        margin-top: 11vh;
+    }
+    .active{
+        width: 100%;
+        height: 76vh;
+        top: 11vh;
+    }
+}
+@media (min-width:1100px) and (max-width:1200px){
+
+    html{
+        font-size: 7.6px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 9vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 9vh;
+    }
+    .shoping-first{
+        margin-top: 12vh;
+    }
+    .active{
+        width: 22%;
+        height: 100vh;
+        top: 12vh;
+    }
+}
+@media (min-width:1200px) and (max-width:1300px){
+
+    html{
+        font-size: 8.2px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 10vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 10vh;
+    }
+    .shoping-first{
+        margin-top: 13vh;
+    }
+    .active{
+        width: 22%;
+        height: 100vh;
+        top: 13vh;
+    }
+}
+@media (min-width:1300px) and (max-width:1400px){
+
+    html{
+        font-size: 9px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 11vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 11vh;
+    }
+    .shoping-first{
+        margin-top: 14vh;
+    }
+    .active{
+        width: 22%;
+        height: 100vh;
+        top: 14vh;
+    }
+}
+@media (min-width:1400px) and (max-width:1500px){
+
+    html{
+        font-size: 9.5px;
+    }
+    .nav-item{
+        width: 100%;
+        height: 12vh;
+    }
+    .nav-all{
+        height: 3vh;
+        top: 12vh;
+    }
+    .shoping-first{
+        margin-top: 15vh;
+    }
+    .active{
+        width: 22%;
+        height: 100vh;
+        top: 14vh;
+    }
+}
