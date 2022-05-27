@@ -1,0 +1,55 @@
+
+.sell-pan{
+    display:flex;
+    margin: 20vh auto;
+    width: 90%;
+    height: 55rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.sell-pan div{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(232, 243, 239);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    border: .1rem solid black;
+}
+.sell-pan img{
+    width: 95%;
+    height: 78%;
+    transition: all .5s ease;
+}
+.sell-pan img:hover{
+    transform: scale(1.1);
+}
+.sell-pan span{
+    font-size: 3.5rem;
+    color: #3e6787;
+    letter-spacing: .1rem;
+}
+.sell-pan button{
+    border-radius: 1rem;
+    border: none;
+    padding: 1.5rem 12rem;
+    background-color: #b48b8b;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: all .5s ease;
+}
+.sell-pan button:hover{
+    transform: scale(.9);
+}
+.last{
+    width: 100%;
+    height: 5rem;
+    background-color: #3e6787;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
