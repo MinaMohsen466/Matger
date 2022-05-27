@@ -1,7 +1,15 @@
 
+.head-name{
+    color: #3e6787;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20vh;
+}
 .sell-pan{
     display:flex;
-    margin: 20vh auto;
+    margin: 4vh auto;
+    padding: 0 2remrem;
     width: 90%;
     height: 55rem;
     justify-content: space-around;
@@ -9,7 +17,7 @@
 }
 .sell-pan div{
     width: 35%;
-    height: 100%;
+    height: 80%;
     background-color: rgb(232, 243, 239);
     display: flex;
     flex-direction: column;
@@ -18,6 +26,7 @@
     border-radius: 1rem;
     padding: 2.5rem;
     border: .1rem solid black;
+    margin-left: 1rem;
 }
 .sell-pan img{
     width: 95%;
@@ -35,7 +44,8 @@
 .sell-pan button{
     border-radius: 1rem;
     border: none;
-    padding: 1.5rem 12rem;
+    height: 4.5rem;
+    width: 28rem;
     background-color: #b48b8b;
     color: white;
     font-weight: bold;

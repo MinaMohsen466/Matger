@@ -6,7 +6,10 @@
 }
 html{
     font-size: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #abd1dc;
 }
 ::-webkit-scrollbar {
     width: 1rem;
@@ -24,271 +27,108 @@ div::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
-.nav-item{
-    width: 100%;
-    height: 9vh;
-    background-color: #3e6787;
+.container{
     display: flex;
-    justify-content: space-around;
+    margin: 20vh auto;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    height: 45rem;
 }
-.logo{
-    font-size: 5rem;
-    color: rgb(225, 245, 235);
-    cursor: pointer;
+.chose{
+    width: 35rem;
+    height: 15rem;
+    text-align: center;
 }
-.logo:hover{
-    color:white;
-}
-.logo u{
-    font-size: 5.5rem;
-    color: #b3f902;
-}
-.search i{
-    font-size: 2.2rem;
-    color: #f4f4bd;
-    margin: 1rem;
-}
-.search i:hover{
-    color: white;
-}
-.search input{
-    border-radius: .5rem;
-    border: none;
-    width: 55rem;
-    height: 3.6rem;
-    padding: .5rem;
-    color: #3e6787;
+.chose button{
+    width: 20rem;
+    height: 4.5rem;
+    font-size: 2.1rem;
     font-weight: bold;
-    font-size: 2rem;
-}
-.btn{
-    padding: .7rem 1.6rem;
-    border-radius: .8rem;
+    border-radius: 1rem;
+    background-color: #333;
+    color: white;
     border: none;
-    font-weight: 900;
-    font-size: 1.8rem;
+    margin: 2.6rem 0;
     cursor: pointer;
-    background-color:white;
-    text-decoration: none;
+}
+.chose button:hover{
+    box-shadow: 2rem 2rem 10rem black;
+    background-color: white;
     color: #333;
 }
-.btn:hover{
-    box-shadow: 0 .5rem 1.3rem rgb(171, 171, 171);
-}
-.nav-all{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 6vh;
-    background-color: black;
-    padding: 2rem;
-    position: fixed;
-    top: 9vh;
-    left: 0;
-}
-.nav-all i{
-color: #d7d2d2;
-font-size: 2.7rem;
-margin-right: 1rem;
-}
-.nav-all div a{
-    text-decoration: none;
-    margin-left: 1.5rem;
-    color: #d7d2d2;
-    font-size: 1.7rem;
-}
-.nav-all a:hover{
-    color: white;
-}
-.nav-all i:hover{
-    color: white;
-}
-.hide{
+.loginform{
     visibility: hidden;
-    position: fixed;
-    width: 22%;
-    height: 0vh;
-    background-color:black;
-    top: 0;
-    left: 0;
-    transition: all .7s linear;
-}
-.active .hello{
-    width: 100%;
-    height: 6rem;
-    background-color: #384d5d;
-    color: white;
-    font-size: 3.5rem;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-}
-.active .clothes-nav{
+    width: 0rem;
+    height: 0rem;
     display: flex;
     flex-direction: column;
-    margin: 2rem;
-}
-.active .clothes-nav span{
-    font-size: 3.5rem;
-}
-.active .clothes-nav a{
-    font-size: 2.8rem;
-    text-decoration: none;
-    color: rgb(95, 88, 88);
-    padding: .7rem .5rem;
-    
-}
-.active .clothes-nav a:hover{
-    background-color: #5b6975;
-    color: white;
-    letter-spacing: .3rem;
-}
-.active{
-    visibility: visible;
-    position: fixed;
-    width: 22%;
-    height: 80vh;
-    background-color: rgba(255, 255, 255, .9);
-    top: 15vh;
-    left: 0;
-    padding-top: 1.5rem;
-    letter-spacing: .15rem;
-    overflow-y: scroll;
-    resize: both;
-}
-.shoping-first{
-    height: 45rem;
-    width: 100%;
-    margin-top: 15vh;
-    background-image: url('img/shoping1.jfif');
-    background-size: cover;
-    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0rem .5rem 3rem black;
+    border-bottom: .5rem solid black;
+    transition: all 1.3s ease;
 }
-.shoping-first > div{
-    width: 20%;
-    height: 37rem;
-    background-color: rgba(215, 210, 210, .7);
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    transition: all .7s ease;
-    overflow: hidden;
+.loginform input{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    transition: all 1.3s ease;
 }
-.shoping-first > div span{
-    font-size: 2.2rem;
-    font-weight: bold;
-    padding-bottom: 2rem;
-}
-.shoping-first > div img{
-    width: 27rem;
-    height: 25rem;
-    padding-bottom: 2rem;
+.loginform button{
+    width: 0;
+    height: 0;
+    font-size: 0;
     border-radius: 1rem;
-}
-.shoping-first > div button{
-    width: 8rem;
-    height: 3rem;
-    border-radius: 1rem;
+    background-color: crimson;
+    color: white;
     border: none;
-    font-weight: bold;
-    font-size: 1.4rem;
+    margin: 2.5rem 0;
+    transition: all 1.3s ease-in-out;
 }
-.shoping-first > div button:hover{
+.loginform a{
+    font-size: 0;
+    transition: all 1.3s ease-in-out;
+}
+.activeform{
+    visibility: visible;
     background-color: white;
-}
-.shoping-first .div-clothes{
-    margin-bottom: -32rem;   
-}
-.shoping-first > div:hover{
-    transform: scale(1.05);
-}
-.shoping-first .div-electronics{
-    margin-bottom: -38rem;
-}
-.shoping-first .div-computer{
-    margin-bottom: -32rem; 
-}
-.shoping-first .div-health{
-    margin-bottom: -38rem;
-}
-.clothes{
-    width: 100%;
-    height: 40rem;
-    margin-top: 15rem;
-    padding: 1rem 0 0 1rem;
-    overflow: hidden;
+    box-shadow: 0 0 1rem black;
+    width: 42rem;
+    height: 48rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-bottom: .5rem solid black;
+    transition: all 2s ease;
 }
-.clothes span{
-    font-size: 5.5rem;
+.activeform input{
+    width: 33rem;
+    height: 4rem;
+    font-size: 2.2rem;
+    padding: .5rem 1rem;
     font-weight: bold;
-    color: rgb(69, 65, 65);
-    cursor: pointer;
-    text-shadow: .7rem 0rem .5rem black;
+    border: none;
+    border-bottom: .2rem solid black;
+    margin: 2.5rem 0;
+    background-color: rgba(0,0,0,0);
+    transition: all 1.3s ease;
 }
-.clothes span:hover{
-    color: white;
-}
-.clothes span u{
-    font-size: 7.5rem;
-}
-.clothes .clothes-scroll{
-    width: 95%;
-    height: 33rem;
-    background-color: white;
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    overflow-x:scroll ;
-}
-.clothes .clothes-scroll img{
+.activeform button{
     width: 30rem;
-    height: 100%;
-    margin-right: 4rem;
-    border-radius: .5rem;
-    border: .1rem solid black;
-    padding: .4rem;
-}
-.clothes .clothes-scroll img:hover{
-    transform: scale(.99);
-}
-.about-us{
-    margin-top: 10rem;
-    background-color: #384d5d;
-    width: 100%;
-    height: 32rem;
-    text-align: center;
-    padding: 3rem;
-    overflow: hidden;
-}
-.about-us span{
+    height: 4rem;
+    font-size: 2.1rem;
+    border-radius: 1rem;
+    background-color: crimson;
     color: white;
-    font-size: 4rem;
+    border: none;
+    margin: 2.5rem 0;
+    transition: all 1.3s ease;
+}
+.activeform a{
+    font-size: 1.6rem;
     font-weight: bold;
-}
-.about-us p{
-    column-count: 4;
-    column-rule:.2rem solid #000000;
-    column-gap: 4rem;
-    font-size: 1.7rem;
-    margin-top: 3rem;
-    color: rgb(22, 21, 21);
-}
-footer{
-    background-color: rgb(18, 18, 18);
-    text-align: center;
 }
 @media (max-width:200px){
     html{
